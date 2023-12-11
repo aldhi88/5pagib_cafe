@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-<<<<<<< HEAD
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -66,7 +65,7 @@
             </div>           
         </nav>   
         <div class="conten">
-            <div  class=" ml-sm-2 px-md-5">
+            <div  class=" ml-sm-2 px-md-5" style="width: 1000px;">
                 <br>
            <br>
                 <strong>
@@ -74,7 +73,7 @@
                 </strong>
                 <div class="  alert alert-secondary  ">
                     <div class="form-group text-dark   ">
-                        <label for="" class="control-label">Kode Kategori</label>
+                        <label for="" class="control-label" >Kode Kategori</label>
                         <input type="text" class="form-control form-control-sm " required>
                     </div>
                     <div class="form-group  text-dark">
@@ -84,6 +83,7 @@
                     <div class="row">
                         <div class="col-md-12 text-right">
                             <a href="#" class="btn btn-primary">Simpan</a>
+                            <a href="#" class="btn btn-danger">Reset</a>
                         </div>
                     </div>
                 </div>
@@ -91,75 +91,3 @@
         </div>
     </body>
 </html>
-=======
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Edit Kategori</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
-    <style>
-        .mx-auto {
-            width: 800px
-        }
-
-        .card {
-            margin-top: 10px;
-        }
-    </style>
-</head>
-
-<body>
-    <div class="mx-auto">
-        <!-- untuk memasukkan data -->
-        <div class="card">
-            <div class="card-header">
-                From Edit Kategori
-            </div>
-            <div class="card-body">
-                <?php
-                if ($error) {
-                ?>
-                    <div class="alert alert-danger" role="alert">
-                        <?php echo $error ?>
-                    </div>
-                <?php
-                    header("refresh:5;url=index.php");//5 : detik
-                }
-                ?>
-                <?php
-                if ($sukses) {
-                ?>
-                    <div class="alert alert-success" role="alert">
-                        <?php echo $sukses ?>
-                    </div>
-                <?php
-                    header("refresh:5;url=index.php");
-                }
-                ?>
-                <form action="" method="POST">
-                    <div class="mb-3 row">
-                        <label for="nim" class="col-sm-2 col-form-label">Code</label>
-                        <div class="col-sm-10">
-                            <input type="text" class="form-control" id="Code " name="Code" value="<Input Code >">
-                        </div>
-                    </div>
-                    <div class="mb-3 row">
-                        <label for="nama" class="col-sm-2 col-form-label">Nama</label>
-                        <div class="col-sm-10">
-                            <input type="text" class="form-control" id="nama" name="nama" value="<Input Nama>">
-                        </div>
-                    <div class="col-12"><br></br>
-                        <p align="right">
-                        <input type="submit" name="simpan" value="Simpan Data" class="btn btn-primary" />
-                    </p>
-                    </div>
-                </form>
-            </div>
-        </div>
-    </div>
-</body>
-
-</html>
->>>>>>> d0b1ac9773cc54f515a929155ed2a1d664ed05a8
